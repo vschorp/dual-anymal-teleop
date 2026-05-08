@@ -151,7 +151,7 @@
             </div>
           </div>
         </div>  
-        
+
       </div> 
     </div> 
   </div> 
@@ -187,20 +187,44 @@
               <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
               <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the infrastructure.</li>
             </ul>
+            <figure class="image mt-4">
+              <img src="./static/images/mvp_parts_description.png" alt="MVP Parts Description">
+            </figure>
           </div>
 
           <h3 class="title is-4">Analyse</h3>
           <div class="content has-text-justified">
             <p>
-              The collected data is analyzed using AI-driven models to detect anomalies and predict potential failures. 
+              The collected data is analyzed using a time series aggregation framework and anomaly detection models. 
             </p>
           </div>
+
+          <h4 class="title is-5">Thermal</h4>
+          <div class="content has-text-justified">
+            <p>
+              The system's thermal analysis capabilities are designed to detect early signs of overheating and cooling inefficiencies in data center infrastructure. 
+              In the example below, the system identifies a 2°C rise on a MacBook Pro's CPU under stress testing conditions, compared to a nominal workload. 
+            </p>
+          </div>
+
           <div class="columns is-vcentered">
             <div class="column">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img src="./static/images/Thermal_Change.jpeg" alt="Third Person View" style="border-radius: 8px;">
+                    <img src="./static/images/thermal_rgb_01.png" alt="Camera View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Camera View</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_nominal_01.jpeg" alt="Third Person View" style="border-radius: 8px;">
                   </figure>
                 </div>
                 <div class="has-text-centered">
@@ -212,22 +236,41 @@
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img src="./static/images/Detection_Thermal.jpeg" alt="Operator View" style="border-radius: 8px;">
+                    <img src="./static/images/thermal_hot_01.jpeg" alt="Operator View" style="border-radius: 8px;">
                   </figure>
                 </div>
                 <div class="has-text-centered">
-                  <p class="is-size-7 mt-2">Delta Change</p>
+                  <p class="is-size-7 mt-2">Stress Test</p>
                 </div>
               </div>
             </div>
           </div>
 
+          <h4 class="title is-5">Sound</h4>
+          <div class="content has-text-justified">
+            <p>
+              The sound samples are analyzed in the frequency domain. When the fans are turned on the peak around 9 kHz is clearly visibile which correspond to the fan blade frequency (6800 rpm = 113 Hz, 80 blades => 9 kHz). 
+              When the fan is turned off, the peak disappears and the spectrum is dominated by the noise floor.
+            </p>
+          </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/sound_plot_02.jpeg" alt="Sound Plot">
+          </figure>
+
           <h3 class="title is-4">Predict</h3>
           <div class="content has-text-justified">
             <p>
-              By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
+              We believe that preventing data center outages is fundamentally a data challenge, not a hardware one. 
+              That is why our core focus is our on-premise reasoning AI, which translates subtle field anomalies into actionable maintenance. 
+              We feed technical manuals into a RAG pipeline powered by reasoning models, allowing the system to cross-reference data outliers against the machine's own documentation to map exact causality chains and pinpoint the technical root cause.
             </p>
           </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/predict_shema_01.jpeg" alt="Predict Schema">
+          </figure>
+
         </div>
       </div>   
     </div>
