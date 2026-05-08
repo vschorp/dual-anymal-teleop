@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Increasing Data Centre resilience using sensor-based anomaly detection and predictive maintenance.">
+        content="Autonomous inspection robots for data center infrastrcuture">
   <meta name="keywords" content="Anymal, Robotics, Teleoperation, Dual Robot, Computer Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Increasing Data Centre resilience using sensor-based anomaly detection and predictive maintenance</title>
+  <title>InAutonomous inspection robots for data center infrastrcuture</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script>
@@ -46,57 +46,12 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Increasing Data Centre resilience using sensor-based anomaly detection and predictive maintenance
+          <h1 class="title is-1 publication-title">Autonomous inspection robot for data center infrastrcuture
           </h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Vincent Schorp<sup>* 1</sup>,</span>
-            <span class="author-block">Chen Song<sup>* 2</sup>,</span>
-            <span class="author-block">Yuni Fuchioka<sup>1</sup>,</span>
-            <span class="author-block">Hung Hon Cheng<sup>3</sup>,</span>
-            <span class="author-block">Andrei Cramariuc<sup>1</sup>,</span>
-            <span class="author-block">Marco Hutter<sup>1</sup>,</span>
-            <span class="author-block">Kowk Wai Samuel Au<sup>2,4</sup></span>
+          <div class="column is-centered">
+            <img src="./static/images/Header_Picture_Robot.jpeg" alt="Autonomous Inspection Robot" style="border-radius: 12px; max-height: 440px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <br>
-            <p>
-              <span class="author-block"><sup>*</sup>Equal contribution</span>
-            </p>
-            <p>
-              <span class="author-block"><sup>1</sup>Robotic Systems Lab, ETH Zurich</span>
-            </p>
-            <p>
-              <span class="author-block"><sup>2</sup>Multi-Scale Medical Robotics Center, AIR@InnoHK</span>
-            </p>
-            <p>
-              <span class="author-block"><sup>3</sup>CREATE Lab, EPF Lausanne</span>
-            </p>
-            <p>
-              <span class="author-block"><sup>4</sup>Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong</span>
-            </p>
-          </div>
-          
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
                 </a>
               </span>
             </div>
@@ -122,14 +77,43 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">The Problem</h2>
         <div class="content has-text-justified">
-          Robotic mobile manipulators hold significant potential to enhance safety and efficiency across a wide range of tasks in difficult or remote environments. While full autonomy remains a challenge due to the complexity of real-world scenarios, teleoperation offers a practical alternative by incorporating human intelligence into remote robotic systems. This paper introduces a teleoperated bimanual system that coordinates two independent, mobile, single-arm robots. A movable arm-mounted stereo camera provides dynamic and adjustable viewpoints, enhancing the operator's depth perception and enabling precise manipulation even in challenging scenarios, such as inserting a plug, pouring liquid from one container to another, or opening a backpack. Using a surgical teleoperation platform allows force feedback integration, further enhancing operator control, offering tangible haptic awareness, and enabling fine-grained interaction with the environment.
+          <p>
+            <strong>The Bottleneck:</strong> The world's most advanced AI and cloud infrastructure is currently monitored by technicians using clipboards and handheld sensors.
+          </p>
+          <p>
+            <strong>The Blind Spot:</strong> Manual rounds are infrequent and prone to human error, allowing early signs of critical power and cooling failures to go unnoticed until they cause severe outages.
+          </p>
+          <p>
+            <strong>The Breaking Point:</strong> The cost of downtime is too high to rely on a reactive maintenance cycle. Manual monitoring simply cannot scale alongside the explosive global demand for compute.
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section>    
+</section>
+
+<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">The Solution</h2>
+        <div class="content has-text-justified">
+          <p>
+            We eliminate operational blind spots by combining <strong> AI-driven predictive maintenance with autonomous robotic data sampling.</strong>  Our system transforms data center operations from "break-fix" to "predict-prevent":
+          </p>
+          <ul>
+            <li><strong>Autonomous Sensing:</strong> Robots patrol 24/7, using thermal, visual, and acoustic sensors to capture high-frequency operational data that humans cannot match.</li>
+            <li><strong>AI Detection:</strong> Intelligent models analyze data streams to spot subtle anomalies, like a specific acoustic frequency or a 0.1°C rise in a breaker, at their earliest stages.</li>
+            <li><strong>Automated Diagnosis:</strong> By feeding technical manuals into a RAG pipeline powered by reasoning models, the system cross-references data outliers against the machine's own documentation to map exact causality chains and pinpoint the technical root cause.</li>
+            <li><strong>Predictive Action:</strong> By flagging worn components before they fail, we ensure uninterrupted uptime, reduce insurance premiums, and eliminate the risks of manual oversight.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>   
 <!--/ Abstract. -->
 
 <!-- Experiments. -->
@@ -137,83 +121,189 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Experiment Videos</h2>
-        <h3 class="title is-4">Lever and Valve Turning Experiment</h3>
+        <h2 class="title is-3">In Action</h2>
+        <h3 class="title is-4">Collect</h3>
         <div class="content has-text-justified">
           <p>
-            In this experiment, the relevance of the proposed setup for industrial tasks is demonstrated. Two robots interact with a wall-mounted lever and valve, typical of industrial appliances. 
+            To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
           </p>
+          <ul>
+            <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
+            <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture physical wear, structural anomalies, and hardware status indicators.</li>
+            <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
+            <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the server aisle.</li>
+          </ul>
         </div>
-        <div class="content">
-          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/lever_turning_keynote_export_SD_v2.mov"
+        <div class="content has-text-centered">
+          <video id="lever_combined" autoplay controls loop playsinline height="100%">
+            <source src="./static/videos/Detailed_video.mp4"
                     type="video/mp4">
           </video>
+            <script>
+              const leverCombinedVideo = document.getElementById('lever_combined');
+              if (leverCombinedVideo) {
+                leverCombinedVideo.muted = false;
+                leverCombinedVideo.volume = 1.0;
+            }
+          </script>
         </div> 
-
-        <h3 class="title is-4">Plug in Experiment</h3>
+        <h3 class="title is-4">Analyse</h3>
         <div class="content has-text-justified">
           <p>
-            This experiment highlights the advantages of the adjustable viewing angle and force feedback, which are paramount for such a task. It involves unplugging and plugging the power cord of a desk lamp into a multi-socket power outlet.
+            The collected data is analyzed using AI-driven models to detect anomalies and predict potential failures. 
           </p>
         </div>
-        <div class="content">
-          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/plug_in_combined_SD_v2.mov"
-                    type="video/mp4">
-          </video>
-        </div>
+        
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/Thermal_Change.jpeg" alt="Third Person View" style="border-radius: 8px;">
+                </figure>
+              </div>
+              <div class="has-text-centered">
+                <p class="is-size-7 mt-2">Nominal Case</p>
+              </div>
+            </div>
+          </div>
 
-        <h3 class="title is-4">Water Pouring Experiment</h3>
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./static/images/Detection_Thermal.jpeg" alt="Operator View" style="border-radius: 8px;">
+                </figure>
+              </div>
+              <div class="has-text-centered">
+                <p class="is-size-7 mt-2">Delta Change</p>
+              </div>
+            </div>
+          </div>
+              <div class="has-text-centered">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="title is-4">Predict</h3>
         <div class="content has-text-justified">
-          This experiment compares the dual-robot setup with a single-robot configuration for pouring liquid between two beakers. It also highlights the importance of controlling the manipulation arm in the camera frame.
+          <p>
+            By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
+          </p>
         </div>
         <h3 class="title is-6">Dual ANYmal ablation</h3>
         <div class="heading1">
-          
-        </div>
-        <div class="content">
-          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/water_pouring_dual_demo_combined_SD_v2.mov"
-                    type="video/mp4">
-          </video>
-        </div>  
-        <h3 class="title is-6">Single ANYmal ablation</h3>
-
-        <div class="content">
-          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/water_pouring_single_demo_combined_SD_v2.mov"
-                    type="video/mp4">
-          </video>
-        </div> 
-
-        <h3 class="title is-4">Bag Opening Experiment</h3>
+          <h3 class="title is-4">Vision</h3>
         <div class="content has-text-justified">
           <p>
-            This experiment demonstrates the advantage of a bimanual system and the movable camera. To accomplish the task, the robots work together to open a backpack lying on a pedestal and extract an object inside.
+            By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
           </p>
         </div>
-        <div class="content">
-          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bag_opening_combined_LD_v2.mov"
-                    type="video/mp4">
-          </video>
+        <h3 class="title is-6">Expand Sensor Coverage</h3>
+        <div class="heading1">
+          <h3 class="title is-4">Traction</h3>
+        <div class="content has-text-justified">
+          <p>
+            We are in active pilot discussions with Tier 1 data center partners Vantage and Digital Realty to validate our MVP in real-world operations. This partnership will allow us to refine our technology based on direct feedback from industry leaders and demonstrate the tangible benefits of our solution in live data center environments.
+          </p>
+        </div>
+        <h3 class="title is-6">In active discussion with Tier 1 companies</h3>
+        <div class="heading1">
+        </div>
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-half has-text-centered">
+            <div class="card">
+              <a href="https://www.vantage-dc.com" target="_blank" rel="noopener noreferrer">
+                <div class="card-image">
+                  <figure class="image" style="padding: 1.25rem; min-height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <img src="./static/images/vantage-logo.png" alt="Vantage logo placeholder" style="max-height: 160px; width: auto; object-fit: contain;">
+                  </figure>
+                </div>
+              </a>
+              <div class="card-content">
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half has-text-centered">
+            <div class="card">
+              <a href="https://www.digitalrealty.com" target="_blank" rel="noopener noreferrer">
+                <div class="card-image">
+                  <figure class="image" style="padding: 1.25rem; min-height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <img src="./static/images/digital-realty-logo.png" alt="Digital Realty logo placeholder" style="max-height: 160px; width: auto; object-fit: contain;">
+                  </figure>
+                </div>
+              </a>
+              <div class="card-content">
+              </div>
+            </div>
+          </div>
+        </div>  
         </div> 
+</section>
+<!--/ About Us Section. -->
+
+<section class="section" id="About US">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">About Us</h2>
+    <div class="content has-text-centered mb-6">
+      <p>
+        We operate across the full predictive maintenance stack, combining physical robotic data capture, time-series anomaly detection, and enterprise integration to automate critical infrastructure monitoring.
+      </p>
+    </div>
+    
+    <div class="columns is-multiline is-vcentered">
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img src="./static/images/vincent_headshot.jpg" alt="Cofounder 1" style="border-radius: 8px;">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Vincent Schorp</p>
+            <p class="subtitle is-6">Robotics Lead</p>
+            <div class="content">
+              <p>[Add cofounder 1's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img src="./static/images/marco_headshot.jpg" alt="Cofounder 2" style="border-radius: 8px;">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Marco Meile</p>
+            <p class="subtitle is-6">Business Lead</p>
+            <div class="content">
+              <p>[Add cofounder 2's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img src="./static/images/jules_headshot.jpg" alt="Cofounder 3" style="border-radius: 8px;">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Jules Authier</p>
+            <p class="subtitle is-6">Data Lead</p>
+            <div class="content">
+              <p>[Add cofounder 3's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!--/ Experiments. -->
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{tbd,
-  author    = {tbd},
-  title     = {tbd},
-  journal   = {tbd},
-  year      = {2025},
-}</code></pre>
   </div>
 </section>
 
