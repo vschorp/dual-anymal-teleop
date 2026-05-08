@@ -41,6 +41,7 @@
 </head>
 <body>
 
+<!-- Title. -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -61,18 +62,9 @@
     </div>
   </div>
 </section>
+<!--/ Title. -->
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">! Website is still work in progress !</h2>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- Abstract. -->
+<!-- Problem. -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -93,7 +85,9 @@
     </div>
   </div>
 </section>
+<!--/ Problem. -->
 
+<!-- Solution. -->
 <section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -114,102 +108,115 @@
     </div>
   </div>
 </section>   
-<!--/ Abstract. -->
+<!--/ Solution. -->
 
-<!-- Experiments. -->
+<!-- In Action. -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">In Action</h2>
-        <h3 class="title is-4">Collect</h3>
-        <div class="content has-text-justified">
-          <p>
-            To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
-          </p>
-          <ul>
-            <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
-            <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture physical wear, structural anomalies, and hardware status indicators.</li>
-            <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
-            <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the server aisle.</li>
-          </ul>
-        </div>
-        <div class="content has-text-centered">
-          <video id="lever_combined" autoplay controls loop playsinline height="100%">
-            <source src="./static/videos/Detailed_video.mp4"
-                    type="video/mp4">
-          </video>
+          <div class="content has-text-centered">
+            <video id="dc_monitoring_mvp" autoplay controls loop playsinline height="100%">
+              <source src="./static/videos/DC_Monitoring_V3.mp4" type="video/mp4">
+            </video>
             <script>
-              const leverCombinedVideo = document.getElementById('lever_combined');
-              if (leverCombinedVideo) {
-                leverCombinedVideo.muted = false;
-                leverCombinedVideo.volume = 1.0;
-            }
-          </script>
-        </div> 
-        <h3 class="title is-4">Analyse</h3>
-        <div class="content has-text-justified">
-          <p>
-            The collected data is analyzed using AI-driven models to detect anomalies and predict potential failures. 
-          </p>
-        </div>
-        
-        <div class="columns is-vcentered">
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="./static/images/Thermal_Change.jpeg" alt="Third Person View" style="border-radius: 8px;">
-                </figure>
+                const techVideo = document.getElementById('dc_monitoring_mvp');
+                if (techVideo) {
+                  techVideo.muted = false;
+                  techVideo.volume = 1.0;
+              }
+            </script>
+          </div> 
+
+          <h3 class="title is-4">Collect</h3>
+          <div class="content has-text-justified">
+            <p>
+              To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
+            </p>
+            <ul>
+              <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
+              <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture hardware status indicators, structural anomalies, and physical wear.</li>
+              <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
+              <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the infrastructure.</li>
+            </ul>
+          </div>
+
+          <h3 class="title is-4">Analyse</h3>
+          <div class="content has-text-justified">
+            <p>
+              The collected data is analyzed using AI-driven models to detect anomalies and predict potential failures. 
+            </p>
+          </div>
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/Thermal_Change.jpeg" alt="Third Person View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Nominal Case</p>
+                </div>
               </div>
-              <div class="has-text-centered">
-                <p class="is-size-7 mt-2">Nominal Case</p>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/Detection_Thermal.jpeg" alt="Operator View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Delta Change</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="./static/images/Detection_Thermal.jpeg" alt="Operator View" style="border-radius: 8px;">
-                </figure>
-              </div>
-              <div class="has-text-centered">
-                <p class="is-size-7 mt-2">Delta Change</p>
-              </div>
-            </div>
-          </div>
-              <div class="has-text-centered">
-              </div>
-            </div>
+          <h3 class="title is-4">Predict</h3>
+          <div class="content has-text-justified">
+            <p>
+              By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
+            </p>
           </div>
         </div>
-        <h3 class="title is-4">Predict</h3>
+      </div>   
+    </div>
+  </div>  
+</section>
+<!--/ In Action. -->
+
+<!-- Vision. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">     
+        <h2 class="title is-3">Vision</h2>
         <div class="content has-text-justified">
           <p>
             By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
           </p>
         </div>
-        <h3 class="title is-6">Dual ANYmal ablation</h3>
-        <div class="heading1">
-          <h3 class="title is-4">Vision</h3>
-        <div class="content has-text-justified">
-          <p>
-            By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
-          </p>
-        </div>
-        <h3 class="title is-6">Expand Sensor Coverage</h3>
-        <div class="heading1">
-          <h3 class="title is-4">Traction</h3>
+      </div>
+    </div>
+  </div>      
+</section>
+<!--/ Vision. -->
+
+<!-- Traction. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">     
+        <h2 class="title is-3">Traction</h2>
         <div class="content has-text-justified">
           <p>
             We are in active pilot discussions with Tier 1 data center partners Vantage and Digital Realty to validate our MVP in real-world operations. This partnership will allow us to refine our technology based on direct feedback from industry leaders and demonstrate the tangible benefits of our solution in live data center environments.
           </p>
         </div>
-        <h3 class="title is-6">In active discussion with Tier 1 companies</h3>
-        <div class="heading1">
-        </div>
+        
         <div class="columns is-vcentered is-multiline">
           <div class="column is-half has-text-centered">
             <div class="card">
@@ -239,10 +246,13 @@
             </div>
           </div>
         </div>  
-        </div> 
-</section>
-<!--/ About Us Section. -->
 
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+<!-- About Us. -->
 <section class="section" id="About US">
   <div class="container is-max-desktop">
     <h2 class="title is-3">About Us</h2>
@@ -306,7 +316,7 @@
     </div>
   </div>
 </section>
-
+<!--/ About Us. -->
 
 <footer class="footer">
   <div class="container">
