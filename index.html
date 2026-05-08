@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Autonomous inspection robots for data center infrastrcuture">
+        content="Autonomous inspection robots for data center infrastructure">
   <meta name="keywords" content="Anymal, Robotics, Teleoperation, Dual Robot, Computer Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InAutonomous inspection robots for data center infrastrcuture</title>
+  <title>Infrastructure monitoring for data centers</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script>
@@ -41,39 +41,26 @@
 </head>
 <body>
 
+<!-- Title. -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Autonomous inspection robot for data center infrastrcuture
-          </h1>
+          <h1 class="title is-1 publication-title">Synapse</h1>
+          <h2 class="subtitle is-4">Infrastructure Monitoring for Data Centers</h2>
           <div class="column is-centered">
-            <img src="./static/images/Header_Picture_Robot.jpeg" alt="Autonomous Inspection Robot" style="border-radius: 12px; max-height: 440px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-          </div>
-
-                </a>
-              </span>
-            </div>
+            <img src="./static/images/Intro_picture.png" alt="Autonomous Inspection Robot" style="border-radius: 12px; max-height: 440px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">          
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!--/ Title. -->
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">! Website is still work in progress !</h2>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- Abstract. -->
-<section class="section">
+<!-- Problem. -->
+<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -93,8 +80,10 @@
     </div>
   </div>
 </section>
+<!--/ Problem. -->
 
-<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
+<!-- Solution. -->
+<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -114,102 +103,20 @@
     </div>
   </div>
 </section>   
-<!--/ Abstract. -->
+<!--/ Solution. -->
 
-<!-- Experiments. -->
-<section class="section">
+<!-- Traction. -->
+<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">In Action</h2>
-        <h3 class="title is-4">Collect</h3>
-        <div class="content has-text-justified">
-          <p>
-            To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
-          </p>
-          <ul>
-            <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
-            <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture physical wear, structural anomalies, and hardware status indicators.</li>
-            <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
-            <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the server aisle.</li>
-          </ul>
-        </div>
-        <div class="content has-text-centered">
-          <video id="lever_combined" autoplay controls loop playsinline height="100%">
-            <source src="./static/videos/Detailed_video.mp4"
-                    type="video/mp4">
-          </video>
-            <script>
-              const leverCombinedVideo = document.getElementById('lever_combined');
-              if (leverCombinedVideo) {
-                leverCombinedVideo.muted = false;
-                leverCombinedVideo.volume = 1.0;
-            }
-          </script>
-        </div> 
-        <h3 class="title is-4">Analyse</h3>
-        <div class="content has-text-justified">
-          <p>
-            The collected data is analyzed using AI-driven models to detect anomalies and predict potential failures. 
-          </p>
-        </div>
-        
-        <div class="columns is-vcentered">
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="./static/images/Thermal_Change.jpeg" alt="Third Person View" style="border-radius: 8px;">
-                </figure>
-              </div>
-              <div class="has-text-centered">
-                <p class="is-size-7 mt-2">Nominal Case</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="./static/images/Detection_Thermal.jpeg" alt="Operator View" style="border-radius: 8px;">
-                </figure>
-              </div>
-              <div class="has-text-centered">
-                <p class="is-size-7 mt-2">Delta Change</p>
-              </div>
-            </div>
-          </div>
-              <div class="has-text-centered">
-              </div>
-            </div>
-          </div>
-        </div>
-        <h3 class="title is-4">Predict</h3>
-        <div class="content has-text-justified">
-          <p>
-            By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
-          </p>
-        </div>
-        <h3 class="title is-6">Dual ANYmal ablation</h3>
-        <div class="heading1">
-          <h3 class="title is-4">Vision</h3>
-        <div class="content has-text-justified">
-          <p>
-            By identifying early warning signs of component degradation, the system enables proactive maintenance, ensuring uninterrupted uptime and reducing operational costs.
-          </p>
-        </div>
-        <h3 class="title is-6">Expand Sensor Coverage</h3>
-        <div class="heading1">
-          <h3 class="title is-4">Traction</h3>
+      <div class="column is-full-width">     
+        <h2 class="title is-3">Traction</h2>
         <div class="content has-text-justified">
           <p>
             We are in active pilot discussions with Tier 1 data center partners Vantage and Digital Realty to validate our MVP in real-world operations. This partnership will allow us to refine our technology based on direct feedback from industry leaders and demonstrate the tangible benefits of our solution in live data center environments.
           </p>
         </div>
-        <h3 class="title is-6">In active discussion with Tier 1 companies</h3>
-        <div class="heading1">
-        </div>
+        
         <div class="columns is-vcentered is-multiline">
           <div class="column is-half has-text-centered">
             <div class="card">
@@ -239,66 +146,232 @@
             </div>
           </div>
         </div>  
-        </div> 
-</section>
-<!--/ About Us Section. -->
 
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+<!-- In Action. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">In Action</h2>
+          <div class="content has-text-centered">
+            <video id="dc_monitoring_mvp" autoplay controls loop playsinline height="100%">
+              <source src="./static/videos/DC_Monitoring_V3.mp4" type="video/mp4">
+            </video>
+            <script>
+                const techVideo = document.getElementById('dc_monitoring_mvp');
+                if (techVideo) {
+                  techVideo.muted = false;
+                  techVideo.volume = 1.0;
+              }
+            </script>
+          </div> 
+
+          <h3 class="title is-4">Collect</h3>
+          <div class="content has-text-justified">
+            <p>
+              To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
+            </p>
+            <ul>
+              <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
+              <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture hardware status indicators, structural anomalies, and physical wear.</li>
+              <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
+              <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the infrastructure.</li>
+            </ul>
+            <figure class="image mt-4">
+              <img src="./static/images/mvp_parts_description.png" alt="MVP Parts Description">
+            </figure>
+          </div>
+
+          <h3 class="title is-4">Analyse</h3>
+          <div class="content has-text-justified">
+            <p>
+              The collected data is analyzed using a time series aggregation framework and anomaly detection models. 
+            </p>
+          </div>
+
+          <h4 class="title is-5">Thermal</h4>
+          <div class="content has-text-justified">
+            <p>
+              The system's thermal analysis capabilities are designed to detect early signs of overheating and cooling inefficiencies in data center infrastructure. 
+              In the example below, the system identifies a 2°C rise on a MacBook Pro's CPU under stress testing conditions, compared to a nominal workload. 
+            </p>
+          </div>
+
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_rgb_01.png" alt="Camera View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Camera View</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_nominal_01.jpeg" alt="Third Person View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Nominal Case</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_hot_01.jpeg" alt="Operator View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Stress Test</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="title is-5">Sound</h4>
+          <div class="content has-text-justified">
+            <p>
+              The sound samples are analyzed in the frequency domain. When the fans are turned on the peak around 9 kHz is clearly visibile which correspond to the fan blade frequency (6800 rpm = 113 Hz, 80 blades => 9 kHz). 
+              When the fan is turned off, the peak disappears and the spectrum is dominated by the noise floor.
+            </p>
+          </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/sound_plot_02.jpeg" alt="Sound Plot">
+          </figure>
+
+          <h3 class="title is-4">Predict</h3>
+          <div class="content has-text-justified">
+            <p>
+              We believe that preventing data center outages is fundamentally a data challenge, not a hardware one. 
+              That is why our core focus is our on-premise reasoning AI, which translates subtle field anomalies into actionable maintenance. 
+              We feed technical manuals into a RAG pipeline powered by reasoning models, allowing the system to cross-reference data outliers against the machine's own documentation to map exact causality chains and pinpoint the technical root cause.
+            </p>
+          </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/predict_shema_01.jpeg" alt="Predict Schema">
+          </figure>
+
+        </div>
+      </div>   
+    </div>
+  </div>  
+</section>
+<!--/ In Action. -->
+
+<!-- Product Vision. -->
+<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">     
+        <h2 class="title is-3">Product Vision</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our next MVP iteration will upgrade our autonomous patrols with rugged, industrial-grade mobile bases and cutting-edge sensor payloads, ensuring our AI is fueled by the highest quality continuous data possible.
+          </p>
+        </div>
+        <figure class="image mt-4">
+          <img src="./static/images/vision_picture.jpeg" alt="Vision Picture">
+        </figure>
+      </div>
+    </div>
+  </div>      
+</section>
+<!--/ Product Vision. -->
+
+<!-- About Us. -->
 <section class="section" id="About US">
   <div class="container is-max-desktop">
     <h2 class="title is-3">About Us</h2>
     <div class="content has-text-centered mb-6">
-      <p>
-        We operate across the full predictive maintenance stack, combining physical robotic data capture, time-series anomaly detection, and enterprise integration to automate critical infrastructure monitoring.
-      </p>
+            </p>
     </div>
     
-    <div class="columns is-multiline is-vcentered">
+    <div class="columns is-multiline is-vcentered is-align-items-stretch">
       <div class="column is-one-third">
-        <div class="card">
+        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
           <div class="card-image">
             <figure class="image is-square">
               <img src="./static/images/vincent_headshot.jpg" alt="Cofounder 1" style="border-radius: 8px;">
             </figure>
           </div>
-          <div class="card-content">
-            <p class="title is-5">Vincent Schorp</p>
-            <p class="subtitle is-6">Robotics Lead</p>
-            <div class="content">
-              <p>[Add cofounder 1's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <p class="title is-5">Vincent Schorp</p>
+              <p class="subtitle is-6">Robotics Lead</p>
+              <div class="content">
+                <p>Vincent leads the end-to-end computer vision and ML pipeline. He holds an MSc in Robotics from ETH Zurich and UC Berkeley, and brings deep expertise in building full-stack robotic systems. Previously, he developed mobile ground robots at <strong>Amazon</strong>, advanced autonomous driving models at <strong>Scale AI</strong>, and researched 3D pose estimation at the <strong>ETH Robotic Systems Lab</strong>.</p>
+              </div>
+            </div>
+            <div class="has-text-centered mt-4">
+              <a href="https://www.linkedin.com/in/vschorp/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="mailto:vincent.schorp@gmail.com" class="is-block mt-2 has-text-grey-dark">vincent.schorp@gmail.com</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="column is-one-third">
-        <div class="card">
+        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
           <div class="card-image">
             <figure class="image is-square">
               <img src="./static/images/marco_headshot.jpg" alt="Cofounder 2" style="border-radius: 8px;">
             </figure>
           </div>
-          <div class="card-content">
-            <p class="title is-5">Marco Meile</p>
-            <p class="subtitle is-6">Business Lead</p>
-            <div class="content">
-              <p>[Add cofounder 2's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <p class="title is-5">Marco Meile</p>
+              <p class="subtitle is-6">Business Lead</p>
+              <div class="content">
+                <p>Marco drives the commercial engine and go-to-market strategy. He holds an MSc in Innovation from Imperial College London, and brings a proven track record of turning deep-tech innovations into scalable businesses. Previously, he secured key pilot projects enabling a $4m pre-seed round at <strong>Witty Machines</strong>, led business strategy and generated committed revenue at <strong>Wheemo</strong> and <strong>Cheetah AI</strong>, and managed global digitalization rollouts at <strong>UBS</strong>.</p>
+              </div>
+            </div>
+            <div class="has-text-centered mt-4">
+              <a href="https://www.linkedin.com/in/marco-meile/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="mailto:marco.meile@gmail.com" class="is-block mt-2 has-text-grey-dark">marco.meile@gmail.com</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="column is-one-third">
-        <div class="card">
+        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
           <div class="card-image">
             <figure class="image is-square">
               <img src="./static/images/jules_headshot.jpg" alt="Cofounder 3" style="border-radius: 8px;">
             </figure>
           </div>
-          <div class="card-content">
-            <p class="title is-5">Jules Authier</p>
-            <p class="subtitle is-6">Data Lead</p>
-            <div class="content">
-              <p>[Add cofounder 3's experience and background here. Share key achievements and expertise that bring value to the team.]</p>
+          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <p class="title is-5">Jules Authier</p>
+              <p class="subtitle is-6">Data Lead</p>
+              <div class="content">
+                <p>Jules drives our software architecture and AI integrations. He holds an MSc in IT and Electrical Engineering from ETH Zurich and MIT, bringing deep expertise in developing autonomous and agentic systems. Previously, he built generative AI pipelines and managed technical partnerships at <strong>Unit8</strong>, engineered automated validation processes at <strong>Mikron</strong>, and developed wireless communication hardware at <strong>EPFL</strong>.</p>
+              </div>
+            </div>
+            <div class="has-text-centered mt-4">
+              <a href="https://www.linkedin.com/in/julesauthier/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="mailto:authierjh@gmail.com" class="is-block mt-2 has-text-grey-dark">authierjh@gmail.com</a>
             </div>
           </div>
         </div>
@@ -306,27 +379,11 @@
     </div>
   </div>
 </section>
+<!--/ About Us. -->
 
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is taken from <a href="https://nerfies.github.io">nerfies</a>. This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>. However, the page's contents are under all rights reserved.
-          </p>
-        </div>
-      </div>
-    </div>
+<footer class="footer" style="padding: 1.5rem;">
+  <div class="content has-text-centered">
+    <p class="is-size-7 has-text-grey">&copy; 2026 Synapse. All rights reserved.</p>
   </div>
 </footer>
 
