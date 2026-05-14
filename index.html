@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Autonomous inspection robots for data center infrastructure">
+        content="Dual Mobile Manipulator Teleoperation for Fine-Grained Manipulation">
   <meta name="keywords" content="Anymal, Robotics, Teleoperation, Dual Robot, Computer Vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Infrastructure monitoring for data centers</title>
+  <title>Dual Mobile Manipulator Teleoperation for Fine-Grained Manipulation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script>
@@ -41,71 +41,97 @@
 </head>
 <body>
 
-<!-- Title. -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Synapse</h1>
-          <h2 class="subtitle is-4">Infrastructure Monitoring for Data Centers</h2>
-          <div class="column is-centered">
-            <img src="./static/images/Intro_picture.png" alt="Autonomous Inspection Robot" style="border-radius: 12px; max-height: 440px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">          
+          <h1 class="title is-1 publication-title">Bimanual Teleoperation of Two Quadruped Manipulators</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Vincent Schorp<sup>* 1</sup>,</span>
+            <span class="author-block">Chen Song<sup>* 2</sup>,</span>
+            <span class="author-block">Yuni Fuchioka<sup>1</sup>,</span>
+            <span class="author-block">Hung Hon Cheng<sup>3</sup>,</span>
+            <span class="author-block">Andrei Cramariuc<sup>1</sup>,</span>
+            <span class="author-block">Marco Hutter<sup>1</sup>,</span>
+            <span class="author-block">Kowk Wai Samuel Au<sup>2,4</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <br>
+            <p>
+              <span class="author-block"><sup>*</sup>Equal contribution</span>
+            </p>
+            <p>
+              <span class="author-block"><sup>1</sup>Robotic Systems Lab, ETH Zurich</span>
+            </p>
+            <p>
+              <span class="author-block"><sup>2</sup>Multi-Scale Medical Robotics Center, AIR@InnoHK</span>
+            </p>
+            <p>
+              <span class="author-block"><sup>3</sup>CREATE Lab, EPF Lausanne</span>
+            </p>
+            <p>
+              <span class="author-block"><sup>4</sup>Department of Mechanical and Automation Engineering, The Chinese University of Hong Kong</span>
+            </p>
+          </div>
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--/ Title. -->
 
-<!-- Problem. -->
-<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">The Problem</h2>
+        <h2 class="title is-3">! Website is still work in progress !</h2>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            <strong>The Bottleneck:</strong> The world's most advanced AI and cloud infrastructure is currently monitored by technicians using clipboards and handheld sensors.
-          </p>
-          <p>
-            <strong>The Blind Spot:</strong> Manual rounds are infrequent and prone to human error, allowing early signs of critical power and cooling failures to go unnoticed until they cause severe outages.
-          </p>
-          <p>
-            <strong>The Breaking Point:</strong> The cost of downtime is too high to rely on a reactive maintenance cycle. Manual monitoring simply cannot scale alongside the explosive global demand for compute.
-          </p>
+          Robotic mobile manipulators hold significant potential to enhance safety and efficiency across a wide range of tasks in difficult or remote environments. While full autonomy remains a challenge due to the complexity of real-world scenarios, teleoperation offers a practical alternative by incorporating human intelligence into remote robotic systems. This paper introduces a teleoperated bimanual system that coordinates two independent, mobile, single-arm robots. A movable arm-mounted stereo camera provides dynamic and adjustable viewpoints, enhancing the operator's depth perception and enabling precise manipulation even in challenging scenarios, such as inserting a plug, pouring liquid from one container to another, or opening a backpack. Using a surgical teleoperation platform allows force feedback integration, further enhancing operator control, offering tangible haptic awareness, and enabling fine-grained interaction with the environment.
         </div>
       </div>
     </div>
   </div>
-</section>
-<!--/ Problem. -->
+</section>    
+<!--/ Abstract. -->
 
-<!-- Solution. -->
-<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">The Solution</h2>
-        <div class="content has-text-justified">
-          <p>
-            We eliminate operational blind spots by combining <strong> AI-driven predictive maintenance with autonomous robotic data sampling.</strong>  Our system transforms data center operations from "break-fix" to "predict-prevent":
-          </p>
-          <ul>
-            <li><strong>Autonomous Sensing:</strong> Robots patrol 24/7, using thermal, visual, and acoustic sensors to capture high-frequency operational data that humans cannot match.</li>
-            <li><strong>AI Detection:</strong> Intelligent models analyze data streams to spot subtle anomalies, like a specific acoustic frequency or a 0.1°C rise in a breaker, at their earliest stages.</li>
-            <li><strong>Automated Diagnosis:</strong> By feeding technical manuals into a RAG pipeline powered by reasoning models, the system cross-references data outliers against the machine's own documentation to map exact causality chains and pinpoint the technical root cause.</li>
-            <li><strong>Predictive Action:</strong> By flagging worn components before they fail, we ensure uninterrupted uptime, reduce insurance premiums, and eliminate the risks of manual oversight.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>   
-<!--/ Solution. -->
-
-<!-- In Action. -->
+<!-- Experiments. -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -218,125 +244,100 @@
           <figure class="image mt-4">
             <img src="./static/images/predict_schema_02.png" alt="Predict Schema">
           </figure>
-
         </div>
-      </div>   
-    </div>
-  </div>  
-</section>
-<!--/ In Action. -->
+        <div class="content">
+          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/lever_turning_keynote_export_SD_v2.mov"
+                    type="video/mp4">
+          </video>
+        </div> 
 
-<!-- Product Vision. -->
-<section class="section" style="background-color: #fafafa; border-top: 1px solid #eaeaea;">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">     
-        <h2 class="title is-3">Product Vision</h2>
+        <h3 class="title is-4">Plug in Experiment</h3>
         <div class="content has-text-justified">
           <p>
-            Our next MVP iteration will upgrade our autonomous patrols with rugged, industrial-grade mobile bases and cutting-edge sensor payloads, ensuring our AI is fueled by the highest quality continuous data possible.
+            This experiment highlights the advantages of the adjustable viewing angle and force feedback, which are paramount for such a task. It involves unplugging and plugging the power cord of a desk lamp into a multi-socket power outlet.
           </p>
         </div>
-        <figure class="image mt-4">
-          <img src="./static/images/vision_picture.jpeg" alt="Vision Picture">
-        </figure>
-      </div>
-    </div>
-  </div>      
-</section>
-<!--/ Product Vision. -->
-
-<!-- About Us. -->
-<section class="section" id="About US">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">About Us</h2>
-    <div class="content has-text-centered mb-6">
-            </p>
-    </div>
-    
-    <div class="columns is-multiline is-vcentered is-align-items-stretch">
-      <div class="column is-one-third">
-        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
-          <div class="card-image">
-            <figure class="image is-square">
-              <img src="./static/images/vincent_headshot.jpg" alt="Cofounder 1" style="border-radius: 8px;">
-            </figure>
-          </div>
-          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p class="title is-5">Vincent Schorp</p>
-              <p class="subtitle is-6">Robotics Lead</p>
-              <div class="content">
-                <p>Vincent leads the end-to-end computer vision and ML pipeline. He holds an MSc in Robotics from ETH Zurich and UC Berkeley, and brings deep expertise in building full-stack robotic systems. Previously, he developed mobile ground robots at <strong>Amazon</strong>, advanced autonomous driving models at <strong>Scale AI</strong>, and researched 3D pose estimation at the <strong>ETH Robotic Systems Lab</strong>.</p>
-              </div>
-            </div>
-            <div class="has-text-centered mt-4">
-              <a href="https://www.linkedin.com/in/vschorp/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="mailto:vincent.schorp@gmail.com" class="is-block mt-2 has-text-grey-dark">vincent.schorp@gmail.com</a>
-            </div>
-          </div>
+        <div class="content">
+          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/plug_in_combined_SD_v2.mov"
+                    type="video/mp4">
+          </video>
         </div>
-      </div>
 
-      <div class="column is-one-third">
-        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
-          <div class="card-image">
-            <figure class="image is-square">
-              <img src="./static/images/marco_headshot.jpg" alt="Cofounder 2" style="border-radius: 8px;">
-            </figure>
-          </div>
-          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p class="title is-5">Marco Meile</p>
-              <p class="subtitle is-6">Business Lead</p>
-              <div class="content">
-                <p>Marco drives the commercial engine and go-to-market strategy. He holds an MSc in Innovation from Imperial College London, and brings a proven track record of turning deep-tech innovations into scalable businesses. Previously, he secured key pilot projects enabling a $4m pre-seed round at <strong>Witty Machines</strong>, led business strategy and generated committed revenue at <strong>Wheemo</strong> and <strong>Cheetah AI</strong>, and managed global digitalization rollouts at <strong>UBS</strong>.</p>
-              </div>
-            </div>
-            <div class="has-text-centered mt-4">
-              <a href="https://www.linkedin.com/in/marco-meile/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="mailto:marco.meile@gmail.com" class="is-block mt-2 has-text-grey-dark">marco.meile@gmail.com</a>
-            </div>
-          </div>
+        <h3 class="title is-4">Water Pouring Experiment</h3>
+        <div class="content has-text-justified">
+          This experiment compares the dual-robot setup with a single-robot configuration for pouring liquid between two beakers. It also highlights the importance of controlling the manipulation arm in the camera frame.
         </div>
-      </div>
+        <h3 class="title is-6">Dual ANYmal ablation</h3>
+        <div class="heading1">
+          
+        </div>
+        <div class="content">
+          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/water_pouring_dual_demo_combined_SD_v2.mov"
+                    type="video/mp4">
+          </video>
+        </div>  
+        <h3 class="title is-6">Single ANYmal ablation</h3>
 
-      <div class="column is-one-third">
-        <div class="card is-flex is-flex-direction-column" style="height: 100%;">
-          <div class="card-image">
-            <figure class="image is-square">
-              <img src="./static/images/jules_headshot.jpg" alt="Cofounder 3" style="border-radius: 8px;">
-            </figure>
-          </div>
-          <div class="card-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p class="title is-5">Jules Authier</p>
-              <p class="subtitle is-6">Data Lead</p>
-              <div class="content">
-                <p>Jules drives our software architecture and AI integrations. He holds an MSc in IT and Electrical Engineering from ETH Zurich and MIT, bringing deep expertise in developing autonomous and agentic systems. Previously, he built generative AI pipelines and managed technical partnerships at <strong>Unit8</strong>, engineered automated validation processes at <strong>Mikron</strong>, and developed wireless communication hardware at <strong>EPFL</strong>.</p>
-              </div>
-            </div>
-            <div class="has-text-centered mt-4">
-              <a href="https://www.linkedin.com/in/julesauthier/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-              <a href="mailto:authierjh@gmail.com" class="is-block mt-2 has-text-grey-dark">authierjh@gmail.com</a>
-            </div>
-          </div>
+        <div class="content">
+          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/water_pouring_single_demo_combined_SD_v2.mov"
+                    type="video/mp4">
+          </video>
+        </div> 
+
+        <h3 class="title is-4">Bag Opening Experiment</h3>
+        <div class="content has-text-justified">
+          <p>
+            This experiment demonstrates the advantage of a bimanual system and the movable camera. To accomplish the task, the robots work together to open a backpack lying on a pedestal and extract an object inside.
+          </p>
         </div>
+        <div class="content">
+          <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bag_opening_combined_LD_v2.mov"
+                    type="video/mp4">
+          </video>
+        </div> 
       </div>
     </div>
   </div>
 </section>
-<!--/ About Us. -->
+<!--/ Experiments. -->
 
-<footer class="footer" style="padding: 1.5rem;">
-  <div class="content has-text-centered">
-    <p class="is-size-7 has-text-grey">&copy; 2026 Synapse. All rights reserved.</p>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{tbd,
+  author    = {tbd},
+  title     = {tbd},
+  journal   = {tbd},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is taken from <a href="https://nerfies.github.io">nerfies</a>. This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. However, the page's contents are under all rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
