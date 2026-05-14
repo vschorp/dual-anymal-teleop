@@ -136,12 +136,114 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Experiment Videos</h2>
-        <h3 class="title is-4">Lever and Valve Turning Experiment</h3>
-        <div class="content has-text-justified">
-          <p>
-            In this experiment, the relevance of the proposed setup for industrial tasks is demonstrated. Two robots interact with a wall-mounted lever and valve, typical of industrial appliances. 
-          </p>
+        <h2 class="title is-3">In Action</h2>
+          <div class="content has-text-centered">
+            <video id="dc_monitoring_mvp" autoplay controls loop playsinline height="100%">
+              <source src="./static/videos/DC_Monitoring_V3.mp4" type="video/mp4">
+            </video>
+            <script>
+                const techVideo = document.getElementById('dc_monitoring_mvp');
+                if (techVideo) {
+                  techVideo.muted = false;
+                  techVideo.volume = 1.0;
+              }
+            </script>
+          </div> 
+
+          <h3 class="title is-4">Collect</h3>
+          <div class="content has-text-justified">
+            <p>
+              To eliminate operational blind spots, the robots utilize a specialized sensor suite to capture a complete digital snapshot of critical data center infrastructure. Moving beyond simple visual checks, the system collects:
+            </p>
+            <ul>
+              <li><strong>Thermal Signatures:</strong> High-precision FLIR sensors map heat distribution across server racks and electrical switchgear to identify early-stage thermal bridging or overheating.</li>
+              <li><strong>Visual Telemetry:</strong> High-resolution RGB cameras capture hardware status indicators, structural anomalies, and physical wear.</li>
+              <li><strong>Acoustic Profiling:</strong> High-fidelity audio sensors listen to the mechanical rhythms of cooling units and power systems, picking up on the subtle frequency changes that precede mechanical failure.</li>
+              <li><strong>Environmental Metrics:</strong> Continuous air temperature probing ensures ambient conditions remain optimal at every level of the infrastructure.</li>
+            </ul>
+            <figure class="image mt-4">
+              <img src="./static/images/mvp_parts_description.png" alt="MVP Parts Description">
+            </figure>
+          </div>
+
+          <h3 class="title is-4">Analyse</h3>
+          <div class="content has-text-justified">
+            <p>
+              The collected data is analyzed using a time series aggregation framework and anomaly detection models. 
+            </p>
+          </div>
+
+          <h4 class="title is-5">Thermal</h4>
+          <div class="content has-text-justified">
+            <p>
+              The system's thermal analysis capabilities are designed to detect early signs of overheating and cooling inefficiencies in data center infrastructure. 
+              In the example below, the system identifies a 2°C rise on a MacBook Pro's CPU under stress testing conditions, compared to a nominal workload. 
+            </p>
+          </div>
+
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_rgb_01.png" alt="Camera View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Camera View</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_nominal_01.jpeg" alt="Third Person View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Nominal Case</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="./static/images/thermal_hot_01.jpeg" alt="Operator View" style="border-radius: 8px;">
+                  </figure>
+                </div>
+                <div class="has-text-centered">
+                  <p class="is-size-7 mt-2">Stress Test</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="title is-5">Sound</h4>
+          <div class="content has-text-justified">
+            <p>
+              The sound samples are analyzed in the frequency domain. When the fans are turned on the peak around 9 kHz is clearly visibile which correspond to the fan blade frequency (6800 rpm = 113 Hz, 80 blades => 9 kHz). 
+              When the fan is turned off, the peak disappears and the spectrum is dominated by the noise floor.
+            </p>
+          </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/sound_plot_02.jpeg" alt="Sound Plot">
+          </figure>
+
+          <h3 class="title is-4">Predict</h3>
+          <div class="content has-text-justified">
+            <p>
+              We believe that preventing data center outages is fundamentally a data challenge, not a hardware one. 
+              That is why our core focus is our on-premise reasoning AI, which translates subtle field anomalies into actionable maintenance. 
+              We feed technical manuals into a RAG pipeline powered by reasoning models, allowing the system to cross-reference data outliers against the machine's own documentation to map exact causality chains and pinpoint the technical root cause.
+            </p>
+          </div>
+
+          <figure class="image mt-4">
+            <img src="./static/images/predict_schema_02.png" alt="Predict Schema">
+          </figure>
         </div>
         <div class="content">
           <video id="lever_combined" autoplay controls muted loop playsinline height="100%">
